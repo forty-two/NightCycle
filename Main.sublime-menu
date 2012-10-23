@@ -10,12 +10,12 @@
                 "id": "package-settings", 
                 "children": [
                     {
-                        "caption": "ColourChangeTime", 
+                        "caption": "NightCycle", 
                         "children": [
                             {
                                 "caption": "Settings", 
                                 "args": {
-                                    "file": "${packages}/ColourChangeTime/ColourChangeTime.sublime-settings"
+                                    "file": "${packages}/NightCycle/NightCycle.sublime-settings"
                                 }, 
                                 "command": "open_file"
                             },

@@ -17,7 +17,7 @@ class ThemeSwitcher():
 				sublime.save_settings('Preferences.sublime-settings')
 
 	def determineScheme(self):
-		timePeriods = sublime.load_settings('ColourChangeTime.sublime-settings').get('timePeriods')
+		timePeriods = sublime.load_settings('NightCycle.sublime-settings').get('timePeriods')
 		dateNow = datetime.datetime.now()
 		currentTime = datetime.time(dateNow.hour, dateNow.minute)
 
@@ -49,7 +49,7 @@ class ThemeSwitcher():
 		self.setCorrectScheme()
 		
 
-if 'ColourChangeTime' not in globals():
-	ColourChangeTime = True
+if 'NightCycle' not in globals():
+	NightCycle = True
 	switcher = ThemeSwitcher()
 	switcher.run()
