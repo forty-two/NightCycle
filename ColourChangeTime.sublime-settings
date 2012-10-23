@@ -1,0 +1,14 @@
+{
+    "timePeriods": {
+        "day": {
+            "endTime": "17:00", 
+            "colourScheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme", 
+            "startTime": "07:00"
+        }, 
+        "night": {
+            "endTime": "07:00", 
+            "colourScheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme", 
+            "startTime": "17:00"
+        }
+    }
+}

@@ -1,0 +1,1 @@
+This plugin change your Sublime Text colour scheme according to what time of day it is. Simply install it and configure your time periods and desired colour schemes by editing the config file (Access by Preferences menu -> Package Settings -> ColourChangeTime -> Settings).
