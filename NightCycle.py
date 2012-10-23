@@ -31,12 +31,12 @@ class ThemeSwitcher():
     def inTimePeriod(self, startTime, endTime, currentTime):
         if currentTime >= startTime and currentTime <= endTime:
             return True
-        elif currentTime >= startTime and endTime < startTime: # overnight before midnight
-            return True
-        elif currentTime <= startTime and startTime > endTime: # overnight after midnight
-            return True
-        else:
-            return False
+        elif endTime < startTime:
+            if currentTime >= startTime and currentTime <= datetime.time(23,59): # overnight before midnight
+                return True
+            elif currentTime <= endTime and currentTime >= datetime.time(0,0): # overnight after midnight
+                return True
+        return False
 
     def setCorrectScheme(self):
         correctScheme = self.determineScheme()
