@@ -33,7 +33,7 @@ class ThemeSwitcher():
             return True
         elif currentTime >= startTime and endTime < startTime: # overnight before midnight
             return True
-        elif currentTime <= startTime and startTime < endTime: # overnight after midnight
+        elif currentTime <= startTime and startTime > endTime: # overnight after midnight
             return True
         else:
             return False
