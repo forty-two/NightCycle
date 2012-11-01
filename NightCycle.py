@@ -4,7 +4,7 @@ import sublime
 
 class ThemeSwitcher():
     def __init__(self):
-        self.checkDelay = 15000 # 15 seconds
+        self.checkDelay = 2000 # 2 seconds
 
     def changeScheme(self, desiredScheme):
         sublimeSettings = sublime.load_settings('Preferences.sublime-settings')
@@ -14,7 +14,6 @@ class ThemeSwitcher():
             if currentScheme != desiredScheme:
                 print("Switching to new colour scheme: %s" % desiredScheme)
                 sublimeSettings.set('color_scheme', desiredScheme)
-                sublime.save_settings('Preferences.sublime-settings')
 
     def determineScheme(self):
         timePeriods = sublime.load_settings('NightCycle.sublime-settings').get('timePeriods')
