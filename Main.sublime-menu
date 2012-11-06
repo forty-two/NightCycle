@@ -1,26 +1,26 @@
 [
     {
-        "mnemonic": "n", 
-        "caption": "Preferences", 
-        "id": "preferences", 
+        "mnemonic": "n",
+        "caption": "Preferences",
+        "id": "preferences",
         "children": [
             {
-                "mnemonic": "P", 
-                "caption": "Package Settings", 
-                "id": "package-settings", 
+                "mnemonic": "P",
+                "caption": "Package Settings",
+                "id": "package-settings",
                 "children": [
                     {
-                        "caption": "NightCycle", 
+                        "caption": "NightCycle",
                         "children": [
                             {
-                                "caption": "Settings", 
-                                "args": {
-                                    "file": "${packages}/NightCycle/NightCycle.sublime-settings"
-                                }, 
-                                "command": "open_file"
+                                "command": "open_file",
+                                "args": {"file": "${packages}/NightCycle/NightCycle.sublime-settings"},
+                                "caption": "Settings – Default"
                             },
                             {
-                                "caption": "-"
+                                "command": "open_file",
+                                "args": {"file": "${packages}/User/NightCycle.sublime-settings"},
+                                "caption": "Settings – User"
                             }
                         ]
                     }
