@@ -8,7 +8,9 @@ Install in your preferred fashion, then restart Sublime Text.
 
 If desired, configure your time periods and desired colour schemes by editing the config file, which can be accessed through these steps:
 
-Preferences menu -> Package Settings -> NightCycle -> Settings
+Preferences menu -> Package Settings -> NightCycle -> Settings - User
+
+This file will initially be blank, look at the contents of "Settings - Default" to get the configuration structure (it's easiest to copy the default configuration over and then edit from that base).
 
 The default time periods are 'day' and 'night', switching between Solarized Light and Solarized Dark at 0700 hours and 1700 hours respectively.
 
