@@ -2,13 +2,15 @@
     "timePeriods": {
         "day": {
             "startTime": "07:00",
-            "endTime": "17:00", 
-            "colourScheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme"            
+            "endTime": "17:00",
+            "colourScheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
+            "theme": "Default.sublime-theme"
         }, 
         "night": {
             "startTime": "17:00",
-            "endTime": "07:00", 
-            "colourScheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme"            
+            "endTime": "07:00",
+            "colourScheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+            "theme": "Default.sublime-theme"
         }
     }
 }

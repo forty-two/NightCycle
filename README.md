@@ -1,6 +1,6 @@
 ## NightCycle
 
-Changes a users Sublime Text 2 colour scheme automatically according to what time of day it is.
+Changes a user's Sublime Text 2 colour scheme and UI theme automatically according to what time of day it is.
 
 ## Usage
 
