@@ -8,14 +8,14 @@ class ThemeSwitcher():
 
     def changeThemeAndScheme(self, desiredTheme, desiredScheme):
         sublimeSettings = sublime.load_settings('Preferences.sublime-settings')
-        if desiredTheme and desiredScheme:
+        if desiredScheme:
             currentScheme = sublimeSettings.get('color_scheme')
-            currentTheme = sublimeSettings.get('theme')
-
             if currentScheme != desiredScheme:
                 print("Switching to new colour scheme: %s" % desiredScheme)
                 sublimeSettings.set('color_scheme', desiredScheme)
-
+            
+        if desiredTheme:
+            currentTheme = sublimeSettings.get('theme')
             if currentTheme != desiredTheme:
                 print("Switching to new theme: %s" % desiredTheme)
                 sublimeSettings.set('theme', desiredTheme)
