@@ -22,4 +22,8 @@ Start and end times must use 24 hour time in the format Hour:Minute in order to 
 
 ## Acknowledgements
 
-Credit goes to urbushey on Reddit for giving me the idea for this plugin
+[urbushey](http://www.reddit.com/user/urbushey) for the original idea
+
+[p4ul](https://github.com/p4ul) for contributing code on user settings
+
+[Scott Bai](https://github.com/sbai) for adding in UI theme support
