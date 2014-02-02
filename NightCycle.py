@@ -25,6 +25,8 @@ class ThemeSwitcher():
         dateNow = datetime.datetime.now()
         currentTime = datetime.time(dateNow.hour, dateNow.minute)
 
+        if timePeriods is None:
+            return None, None
         for timePeriod in timePeriods:
             startTime = self.timeObject(timePeriods.get(timePeriod, {}).get('startTime', '0:00'))
             endTime = self.timeObject(timePeriods.get(timePeriod, {}).get('endTime', '0:00'))
@@ -32,7 +34,7 @@ class ThemeSwitcher():
                 theme = timePeriods.get(timePeriod, {}).get('theme', None)
                 scheme = timePeriods.get(timePeriod, {}).get('colourScheme', None)
                 return (theme, scheme)
-        return False
+        return None, None
 
     def inTimePeriod(self, startTime, endTime, currentTime):
         if currentTime >= startTime and currentTime <= endTime:
